@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manas Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add a dark background color to the top navigation */
+        .topnav {
+            background-color: #1c1c1c;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #444;
+            color: white;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #444;
+            color: white;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2b2b2b;
+            color: #f0f0f0;
+        }
+
+        /* The hero image */
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Golf1.jfif');
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Place text in the middle of the hero section */
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        /* About section */
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        .card {
+            background-color: #444;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            color: #f0f0f0;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        .title {
+            color: #ccc;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            background-color: #555;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #777;
+        }
+
+        /* Contact Form styling */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            background-color: #2b2b2b;
+            color: #f0f0f0;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Contact section */
+        .contact-section {
+            background-color: #2b2b2b;
+            padding: 40px;
+        }
+
+        /* Footer styling */
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(107, 107, 107, 0.87);
+  color: white;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to Manas's Portfolio</h1>
+            <p>Software Engineering student and Business Operations Analyst Intern</p>
+            <button class="button">Learn More About Me</button>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about-section" id="about">
+        <h1>About Me</h1>
+        <p>
+            I am currently a Software Engineering student at Western University looking to double degree with Honours Business Administration and hoping to pursue a career in Tech Consulting.
+            In my spare time I enjoy travelling, playing basketball, golf, hockey, running, and spending time with friends.
+    </div>
+      
+    <!-- Experience Section -->
+    <h2 style="text-align:center">My Work Experience</h2>
+    <div class="row" id="experience">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Business Operations Analyst Intern</h2>
+                    <p class="title"> Boutique Consulting Group </p>
+                    <p>Implemented AI and GPT solutions to streamline business operations, focusing on office lease negotiation, healthcare consulting, and practice management for medical professionals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Vice President of Finance</h2>
+                    <p class="title">IEC</p>
+                    <p>Managed operations and optimized internal finances for the club’s events, focusing on strategic planning and operational efficiency.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Frosh Leader</h2>
+                    <p class="title">University</p>
+                    <p>Led orientation activities for new students, helping them adjust to university life and providing support throughout their first year.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <h2 style="text-align:center">Contact Me</h2>
+        <p style="text-align:center">Feel free to reach out to me via the form below or through my LinkedIn and GitHub profiles.</p>
+        <div class="row">
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Manas. All rights reserved.</p>
+    </div>
+
+    <div class="footer">
+      </div>
+</body>
+</html>
